@@ -1,0 +1,659 @@
+body {
+    margin: 0;
+    padding-top: 60px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar custom styles */
+.navbar {
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navbar-brand {
+    font-family: 'DynaPuff';
+    font-size: 3rem;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'DynaPuff';
+    font-size: 1.1rem;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+    transform: translateY(-3px);
+    background-color: peachpuff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-bottom: 0px;
+        margin: 0;
+    }
+
+
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-brand,
+    .navbar-nav {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 2em;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        margin: 0;
+        padding: 5px 10px;
+    }
+}
+
+/*home page*/
+.IndexHeading {
+    padding-top: 10px;
+    position: relative;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.puppypic {
+    width: 100%;
+    height: 900px;
+    object-position: cover;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    font-family: 'Dynapuff', serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    text-shadow: 1px 1px 2px darkblue;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+    width: 80%;
+    color: white;
+}
+
+.paragraph {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+
+.overlay-text3 {
+    font-family: 'Dynapuff', serif;
+    font-size: 300%;
+    color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    z-index: 3;
+}
+
+.orangepic {
+    width: 100%;
+    height: 800px;
+    object-position: cover;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+    object-position: 50% 40%;
+}
+
+.about-section {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+#button-services {
+    color: black;
+    font-size: 3rem;
+    font-family: 'DynaPuff', serif;
+}
+
+#button-services span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#button-services span:hover {
+    color: orange;
+    transform: rotate(2deg);
+}
+
+@media (max-width: 768px) {
+    .IndexHeading {
+        padding-top: 10px;
+    }
+
+    .IndexHeading .overlay-text {
+        top: 15%;
+        font-size: 40px;
+        color: white;
+        /* your test color */
+    }
+
+    .overlay-text {
+        top: 25%;
+        font-size: 2.5rem;
+    }
+
+    .overlay-text3 {
+        font-size: 1.5rem;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .testimonial-overlay {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 30px;
+    }
+}
+
+
+.services {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: peachpuff;
+
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+
+}
+
+.service-item {
+    overflow: hidden;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.puppyBottomPic {
+    width: 100%;
+    height: 500px;
+    object-position: 50% 20%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.testimonial-container {
+    position: relative;
+    width: 100%;
+
+}
+
+.pawpic2 {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.5;
+    object-position: 50% 40%;
+}
+
+
+.testimonial-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    width: 70%;
+    z-index: 5;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+/* Gallery page */
+
+
+/* Heading Styles */
+.gallery-heading {
+    padding-top: 120px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#galleryh2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.2rem;
+    margin: 0;
+    color: orange;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+    /* set the height you want for your images */
+}
+
+.image-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-hover .hover-img {
+    opacity: 0;
+    z-index: 2;
+}
+
+.image-hover:hover .hover-img {
+    opacity: 1;
+}
+
+.image-hover img:first-child {
+    z-index: 1;
+}
+
+
+/* CONTACT PAGE*/
+.maps {
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.maps h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#contact {
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.formcomments {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-contact img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section h2 {
+    font-family: 'DynaPuff', serif;
+    font-size: 3rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.form-wrapped {
+    background-color: pink;
+    padding: 30px;
+}
+
+.btn-primary {
+    background-color: orange;
+    border-color: orange;
+    font-family: 'DynaPuff', serif;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: orange;
+    border-color: orange;
+}
+
+
+/* SERVICES */
+
+section.services-wrapper,
+.services-wrapper {
+    padding: 40px 20px;
+}
+
+/* Container for the services table */
+.services-table {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Main Heading */
+.services-wrapper h2 {
+    text-align: center;
+    color: orange;
+    font-family: 'DynaPuff', serif;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+/* Table Styling */
+.services-table .table {
+    background-color: pink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Row */
+.services-table .table th {
+    background-color: pink;
+    color: #333;
+    font-family: 'DynaPuff', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Table Cells */
+.services-table .table th,
+.services-table .table td {
+    padding: 40px;
+    font-size: 1.5rem;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+}
+
+/* Hover Effect */
+.services-table .table tbody tr:hover td {
+    background-color: bisque;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .services-table h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-table .table th,
+    .services-table .table td {
+        padding: 20px;
+    }
+}
+
+
+
+/*bookings */
+
+
+.booking-heading {
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.form-wrapper {
+    background-color: pink;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.btn-primary1 {
+    background-color: beige;
+    border: none;
+    font-family: 'DynaPuff', cursive;
+    color: #333;
+}
+
+.btn-primary1:hover {
+    background-color: orange;
+    color: black;
+}
+
+.form-control {
+    background-color: white;
+    border: 2px solid pink;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    margin-bottom: 2.5rem;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+form {
+    gap: 2rem;
+
+}
+
+.roster {
+    background-color: white;
+}
+
+.roster h2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.roster .table td {
+    font-size: 1.5rem;
+}
+
+.roster .table th {
+    background-color: pink;
+    color: #333;
+    font-family: 'DynaPuff', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.roster .table th,
+.roster .table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+
+}
+
+.roster .table th:last-child,
+.roster .table td:last-child {
+    border-right: none;
+}
+/* Privacy  */
+
+.privacy-content {
+    background-color: #fff8f5; 
+    padding: 60px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'DynaPuff', cursive;
+    line-height: 1.8;
+}
+
+.privacy-content h1, .privacy-content h2 {
+    color: orange; 
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.privacy-content p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.privacy-content ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.privacy-content ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: pink;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+
+}
+
+footer p {
+    font-size: 1.5rem;
+}

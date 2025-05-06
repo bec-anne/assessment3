@@ -1,0 +1,7 @@
+<Files "roster.html">
+  AuthType Basic
+  AuthName "Restricted Area - Staff Only"
+  AuthUserFile /Users/rebeccanancekivell/Downloads/html assessment 3/.htpasswd
+  Require valid-user
+</Files>
+
