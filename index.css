@@ -50,7 +50,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .navbar {
         padding-bottom: 0px;
         margin: 0;
@@ -604,17 +604,46 @@ form {
     vertical-align: middle;
     border-bottom: 2px solid #ddd;
     border-right: 2px solid #ddd;
-
 }
 
 .roster .table th:last-child,
 .roster .table td:last-child {
     border-right: none;
 }
+
+.mobile-roster {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .desktop-roster {
+        display: none;
+    }
+
+    .mobile-roster {
+        display: block;
+        padding: 20px;
+        background-color: white;
+        font-family: 'DynaPuff', cursive;
+    }
+
+    .mobile-roster h3 {
+        color: orange;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .mobile-roster p {
+        font-size: 1.2rem;
+        color: #555;
+    }
+}
+
+
 /* Privacy  */
 
 .privacy-content {
-    background-color: #fff8f5; 
+    background-color: #fff8f5;
     padding: 60px 30px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -622,8 +651,9 @@ form {
     line-height: 1.8;
 }
 
-.privacy-content h1, .privacy-content h2 {
-    color: orange; 
+.privacy-content h1,
+.privacy-content h2 {
+    color: orange;
     margin-top: 20px;
     margin-bottom: 15px;
     font-weight: bold;
