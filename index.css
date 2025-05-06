@@ -457,7 +457,7 @@ section.services-wrapper,
     padding: 40px 20px;
 }
 
-/* Container for the services table */
+
 .services-table {
     background-color: white;
     border-radius: 15px;
@@ -507,7 +507,7 @@ section.services-wrapper,
 }
 
 
-/* Mobile Responsiveness */
+/* Mobile  */
 @media (max-width: 768px) {
     body {
         font-size: 90%;
